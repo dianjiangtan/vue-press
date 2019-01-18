@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{167:function(e,t,n){"use strict";n.r(t);var i={data:function(){return{}}},r=n(0),a=Object(r.a)(i,function(){var e=this.$createElement;return(this._self._c||e)("div",[this._v("这是文字header")])},[],!1,null,null,null);a.options.__file="artice-header.vue";t.default=a.exports}}]);

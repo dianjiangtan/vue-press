@@ -1,0 +1,15 @@
+{
+  "name": "vue-press",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:dianjiangtan/vue-press.git",
+  "author": "tanchuan <tanchuan@zbj.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^0.14.8"
+  },
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  }
+}
