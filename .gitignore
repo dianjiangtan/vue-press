@@ -1,5 +1,6 @@
 # ADE
 .idea
+docs/.vuepress/dist/
 # Logs
 logs
 *.log
