@@ -19,7 +19,7 @@ git commit -m 'deploy'
 # 如果发布到 https://<USERNAME>.github.io
 echo "环境变量"
 echo ${ACCESS_TOKEN}
-git push -f https://${ACCESS_TOKEN}@github.com/dianjiangtan/dianjiangtan.github.io.git master
+git push -f "https://${ACCESS_TOKEN}@github.com/dianjiangtan/dianjiangtan.github.io.git" master
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
 # git push -f git@github.com:diangjiangtan/vue-press.git dev:dev
