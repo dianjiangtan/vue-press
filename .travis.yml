@@ -9,16 +9,15 @@ branch: dev
 before_install:
   - echo "before_install"
 install:
-  - ls -l
+  - yarn install
 before_script:
   - echo "before_script"
 script:
-  - yarn install
   - yarn run docs:build
 after_success:
   - cd ./docs/.vuepress/dist
   - git init
-  - git config user.username "${U_NAME}"
+  - git config user.name "${U_NAME}"
   - git config user.password "${U_PWD}"
   - git add -A
   - git commit -m "Auto Update by Travis-CI"
