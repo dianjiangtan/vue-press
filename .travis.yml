@@ -13,8 +13,8 @@ install:
 before_script:
   - echo "before_script"
 script:
-  - npm install
-  - npm run docs:build
+  - yarn install
+  - yarn run docs:build
 after_success:
   - cd ./docs/.vuepress/dist
   - git init
