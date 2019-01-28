@@ -17,7 +17,7 @@ git add -A
 git commit -m 'deploy'
 
 # 如果发布到 https://<USERNAME>.github.io
-git push -f 'https://0f85e4556527cc6b37ee7f97657ed21bcaa34a6c@github.com/dianjiangtan/dianjiangtan.github.io.git' master
+git push -f 'https://f2c0a6e4ba0da322d6f42eee40bbe982b986b218@github.com/dianjiangtan/dianjiangtan.github.io.git' master
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
 # git push -f git@github.com:diangjiangtan/vue-press.git dev:dev
