@@ -13,13 +13,14 @@ install:
 before_script:
   - echo "before_script"
 script:
-  - yarn run docs:build
-after_success:
-  - cd ./docs/.vuepress/dist
-  - git init
-  - git config user.name "${U_NAME}"
-  - git config user.email "${U_EMAIL}"
-  - git add -A
-  - git commit -m "Auto Update by Travis-CI"
-  - echo git push --force "https://${GH_TOKEN}@${GH_REF}" master:${P_BRANCH}
-  - git push --force "https://${GH_TOKEN}@${GH_REF}" master:${P_BRANCH}
+  - yarn docs:build
+deploy:
+  provider: pages
+  skip-cleanup: true
+  local_dir: docs/.vuepress/dist
+  github-token: $GH_TOKEN  # Set in the settings page of your repository, as a secure variable
+  repo: $GH_REF
+  keep-history: true
+  target-branch: master
+  on:
+    branch: master
