@@ -12,14 +12,4 @@ install:
 before_script:
   - echo "before_script"
 script:
-  - yarn docs:build
-deploy:
-  provider: pages
-  skip-cleanup: true
-  local_dir: docs/.vuepress/dist
-  github-token: $GH_TOKEN  # Set in the settings page of your repository, as a secure variable
-  repo: $GH_REF
-  keep-history: false
-  target-branch: $TAR_BRANCH
-  name: $GH_NAME
-  email: $GH_EMAIL
+  - ./deploy.sh
