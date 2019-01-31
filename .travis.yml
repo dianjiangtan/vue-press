@@ -22,5 +22,7 @@ deploy:
   repo: $GH_REF
   keep-history: true
   target-branch: master
+  name: $GH_NAME
+  email: $GH_EMAIL
   on:
-    branch: $P_BRANCH
+    branch: $REP_BRANCH
