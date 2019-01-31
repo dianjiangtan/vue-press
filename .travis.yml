@@ -20,7 +20,7 @@ deploy:
   local_dir: docs/.vuepress/dist
   github-token: $GH_TOKEN  # Set in the settings page of your repository, as a secure variable
   repo: $GH_REF
-  keep-history: true
+  keep-history: false
   target-branch: master
   name: $GH_NAME
   email: $GH_EMAIL
