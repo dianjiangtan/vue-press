@@ -12,4 +12,5 @@ install:
 before_script:
   - echo "before_script"
 script:
+  - .chmod +rx ./deploy.sh
   - ./deploy.sh
