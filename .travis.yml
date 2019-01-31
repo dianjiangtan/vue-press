@@ -5,7 +5,6 @@ node_js:
 cache:
   directories:
     - node_modules
-branch: master
 before_install:
   - echo "before_install"
 install:
@@ -24,5 +23,3 @@ deploy:
   target-branch: $TAR_BRANCH
   name: $GH_NAME
   email: $GH_EMAIL
-  on:
-    branch: $REP_BRANCH
