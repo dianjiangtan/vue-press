@@ -13,15 +13,12 @@ before_script:
   - echo "before_script"
 script:
   - yarn docs:build
-deploy:
-  provider: pages
-  skip-cleanup: true
-  local_dir: docs/.vuepress/dist
-  github-token: $GH_TOKEN  # Set in the settings page of your repository, as a secure variable
-  repo: $GH_REF
-  keep-history: true
-  target-branch: $TAR_BRANCH
-  name: $GH_NAME
-  email: $GH_EMAIL
-  on:
-    branch: $REP_BRANCH
+branch: dev
+after_script:
+  - cd ./docs/.vuepress/dist
+  - git init
+  - git config user.name "${GH_NAME}"
+  - git config user.email "${GH_EMAIL}"
+  - git add .
+  - git commit -m "Update tools"
+  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:${TAR_BRANCH}
