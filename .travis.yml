@@ -19,6 +19,6 @@ after_script:
   - git init
   - git config user.name "${GH_NAME}"
   - git config user.email "${GH_EMAIL}"
-  - git add .
+  - git add -A
   - git commit -m "Update tools"
   - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:${TAR_BRANCH}
