@@ -17,7 +17,7 @@ git add -A
 git commit -m 'deploy'
 
 git config --global --replace-all user.name $GH_NAME
-git config --global --replace-all user.emial $GH_EMAIL
+git config --global --replace-all user.password QPM-2016-to-zbj
 
 # 如果发布到 https://<USERNAME>.github.io
 git push 'https://${GH_TOKEN}@github.com/dianjiangtan/dianjiangtan.github.io.git' master
