@@ -21,7 +21,7 @@ deploy:
   github-token: $GH_TOKEN  # Set in the settings page of your repository, as a secure variable
   repo: $GH_REF
   keep-history: false
-  target-branch: master
+  target-branch: $TAR_BRANCH
   name: $GH_NAME
   email: $GH_EMAIL
   on:
